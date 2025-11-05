@@ -15,3 +15,19 @@ track rehabilitation progress, and link them with job opportunities.
 - Digitize beneficiary registration and tracking
 - Provide job-matching recommendations
 - Enable data-driven reporting and analytics
+## Tech Stack
+- **Backend:** 
+- **Database:** 
+- **Frontend:** 
+- **Deployment:**
+  
+## Getting Started
+1. Clone this repo
+2. Run `docker-compose up`
+3. Access app at `http://localhost:8080`
+
+## Example Dashboard
+TBD
+
+## License
+TBD
