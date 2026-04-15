@@ -94,8 +94,9 @@ exports.viewBeneficiaries = async (req, res) => {
       // ...existing code...
 let sql = `
   SELECT b.id, b.beneficiary_name, b.guardian_name, b.age, b.gender, b.education, b.marital_status, b.children_count,
-         b.location, b.health_status, b.occupation_id, jt.job_type_name, b.occupation_place, b.reference_name, 
-         b.reference_address, b.contact_no, b.stay_type, b.remarks, b.employment_status, b.photo
+         b.id_mark, b.location, b.health_status, b.habits, b.occupation_id, jt.job_type_name, b.occupation_place,
+         b.reference_name, b.reference_address, b.contact_no, b.reason_ulb, b.stay_type, b.remarks,
+         b.employment_status, b.photo
   FROM beneficiaries b
   LEFT JOIN job_types jt ON b.occupation_id = jt.id
 `;
