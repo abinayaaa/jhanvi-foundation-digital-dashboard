@@ -98,7 +98,6 @@
         <div class="container">
             <a class="navbar-brand fw-semibold" href="/dashboard">NGO Digital Dashboard</a>
             <div class="d-flex gap-2">
-                <button class="btn btn-outline-light btn-sm btn-pill" onclick="generatePDF()">Download PDF</button>
                 <a href="/beneficiaries/menu" class="btn btn-outline-light btn-sm btn-pill">Back</a>
                 <a href="/logout" class="btn btn-outline-light btn-sm btn-pill">Sign Out</a>
             </div>
@@ -340,7 +339,7 @@
                 { id: 'remarks', label: 'Remarks / Special Attention' },
                 { id: 'shelterName', label: 'Name of the Shelter' },
                 { id: 'shelterLocation', label: 'Shelter Location' },
-                { id: 'ulbName', label: 'Name of the ULB' },
+                { id: 'shelterName', label: 'Name of the ULB' },
                 { id: 'agencyName', label: 'Shelter Management Agency Name' },
                 { id: 'wardNo', label: 'Ward No' }
             ];
@@ -652,7 +651,7 @@
             y += lineSpacing;
             
             field('Remarks / Special Attention:', d.remarks, startX, fullW, true);
-            y += 3;
+            y += 19;
             
             // Signatures side by side
             tempY = y;
